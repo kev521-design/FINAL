@@ -14,13 +14,14 @@ import com.kevin.horrizonuniversity.data.UserDatabase
 import com.kevin.horrizonuniversity.repository.UserRepository
 import com.kevin.horrizonuniversity.ui.screens.about.AboutScreen
 import com.kevin.horrizonuniversity.ui.screens.home.HomeScreen
+import com.kevin.horrizonuniversity.ui.screens.spalsh.SplashScreen
 import com.kevin.horrizonuniversity.viewmodel.AuthViewModel
 
 @Composable
 fun AppNavHost(
     modifier: Modifier = Modifier,
     navController: NavHostController = rememberNavController(),
-    startDestination: String = ROUTE_LOGIN
+    startDestination: String = ROUT_SPLASH
 ) {
     val context = LocalContext.current
 
@@ -35,6 +36,9 @@ fun AppNavHost(
         }
         composable(ROUT_ABOUT) {
             AboutScreen(navController)
+        }
+        composable(ROUT_SPLASH) {
+            SplashScreen(navController)
         }
 
 
