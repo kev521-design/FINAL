@@ -1,4 +1,4 @@
-package com.Kevin.zawadimart.ui.theme.screens.auth
+package com.kevin.horrizonuniversity.ui.theme.screens.auth
 
 import android.widget.Toast
 import androidx.compose.animation.AnimatedVisibility
@@ -27,8 +27,9 @@ import androidx.navigation.NavController
 import com.kevin.horrizonuniversity.viewmodel.AuthViewModel
 import com.kevin.horrizonuniversity.R
 import com.kevin.horrizonuniversity.navigation.ROUTE_REGISTER
-import com.kevin.horrizonuniversity.navigation.ROUT_ABOUT
 import com.kevin.horrizonuniversity.navigation.ROUT_HOME
+import com.kevin.horrizonuniversity.navigation.ROUT_START
+
 
 
 @Composable
@@ -52,7 +53,7 @@ fun LoginScreen(
                     navController.navigate(ROUT_HOME) {
                     }
                 } else {
-                    navController.navigate(ROUT_ABOUT) {
+                    navController.navigate(ROUT_START) {
                     }
                 }
             }
@@ -64,6 +65,8 @@ fun LoginScreen(
         modifier = Modifier
             .fillMaxSize()
             .padding(20.dp),
+
+
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {

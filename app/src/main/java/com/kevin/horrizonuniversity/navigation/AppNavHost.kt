@@ -8,14 +8,20 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.Kevin.zawadimart.ui.theme.screens.auth.LoginScreen
-import com.Kevin.zawadimart.ui.theme.screens.auth.RegisterScreen
 import com.kevin.horrizonuniversity.data.UserDatabase
 import com.kevin.horrizonuniversity.repository.UserRepository
+import com.kevin.horrizonuniversity.ui.screens.StartScreen.StartScreen
 import com.kevin.horrizonuniversity.ui.screens.about.AboutScreen
+import com.kevin.horrizonuniversity.ui.screens.enroll.EnrollScreen
+import com.kevin.horrizonuniversity.ui.screens.events.EventsScreen
+import com.kevin.horrizonuniversity.ui.screens.history.HistoryScreen
 import com.kevin.horrizonuniversity.ui.screens.home.HomeScreen
+import com.kevin.horrizonuniversity.ui.screens.informaion.InformationScreen
+import com.kevin.horrizonuniversity.ui.screens.inquiry.InquiryScreen
 import com.kevin.horrizonuniversity.ui.screens.spalsh.SplashScreen
+import com.kevin.horrizonuniversity.ui.theme.screens.auth.LoginScreen
 import com.kevin.horrizonuniversity.viewmodel.AuthViewModel
+import com.kevin.horrizonunivesity.ui.theme.screens.auth.RegisterScreen
 
 @Composable
 fun AppNavHost(
@@ -40,6 +46,25 @@ fun AppNavHost(
         composable(ROUT_SPLASH) {
             SplashScreen(navController)
         }
+        composable(ROUT_ENROLL) {
+            EnrollScreen(navController)
+        }
+        composable(ROUT_EVENTS) {
+            EventsScreen(navController)
+        }
+        composable(ROUT_INQUIRY) {
+            InquiryScreen(navController)
+        }
+        composable(ROUT_INFORMATION) {
+            InformationScreen(navController)
+        }
+        composable(ROUT_HISTORY) {
+            HistoryScreen(navController)
+        }
+        composable(ROUT_START) {
+            StartScreen(navController)
+        }
+
 
 
 

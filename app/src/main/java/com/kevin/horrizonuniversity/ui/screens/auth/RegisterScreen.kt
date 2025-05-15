@@ -1,4 +1,4 @@
-package com.Kevin.zawadimart.ui.theme.screens.auth
+package com.kevin.horrizonunivesity.ui.theme.screens.auth
 
 import android.widget.Toast
 import androidx.compose.animation.AnimatedVisibility
